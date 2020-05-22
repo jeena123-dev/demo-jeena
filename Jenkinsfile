@@ -12,9 +12,9 @@ pipeline {
                 sh 'pip3 install pytest --user'
             }
         }
-        stage('test') {
+        stage('test'){
             steps {
-                sh 'python3.6.8 -m pytest'
+                sh 'python3 -m pytest'
             }
         }
     }
